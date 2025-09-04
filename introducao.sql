@@ -103,6 +103,12 @@ SELECT COUNT(*) FROM CLIENTES;
 
 /* GROUP BY = Agrupa registros de colunas desejadas */
 /* nesse caso, ele busca o SEXO_AUTOR e exibe quais os tipos existem */
+
+/* Dica: utilizar a função COUNT(*) para verificar a quantidade de cada dado a ser buscado
+   ex.: 70 mulheres e 10 homens --> a quantidade de mulheres é maior em relação a homens
+
+   Dica2 - Performance: para operadores OR ou AND, utilizar o valor maior a ser buscado,
+   de forma que a probabilidade seja maior + melhorar a performance da busca e do banco */
 SELECT SEXO_AUTOR, COUNT(*) FROM LIVRARIA GROUP BY SEXO_AUTOR;
 
 /* ------------------------------------------------- */
