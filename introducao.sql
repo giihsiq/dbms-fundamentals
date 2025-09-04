@@ -111,6 +111,15 @@ SELECT COUNT(*) FROM CLIENTES;
    de forma que a probabilidade seja maior + melhorar a performance da busca e do banco */
 SELECT SEXO_AUTOR, COUNT(*) FROM LIVRARIA GROUP BY SEXO_AUTOR;
 
+/* Filtrando valores nulos = "IS NULL" - valores "não nulos" = "IS NOT NULL" */
+SELECT NOME, SEXO, ENDERECO FROM CLIENTES WHERE EMAIL IS NULL;
+
+/* Atualizar registros */
+UPDATE CLIENTES SET EMAIL = 'giovanna@gmail.com' WHERE NOME = 'Giovanna';
+
+/* Deletar registros */
+DELETE FROM CLIENTES WHERE NOME = 'Giovanna';
+
 /* ------------------------------------------------- */
 
 /* Processos de modelagem */
